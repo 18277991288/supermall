@@ -59,7 +59,7 @@ export default {
     getHomeGoods(type) {
       const page = this.goods[type].page + 1;
       getHomeGoods(type, page).then((res) => {
-        this.goods[type].list.push(...res.data.list);
+        // this.goods[type].list.push(...res.data.list);
         this.goods[type].page += 1;
       });
     },

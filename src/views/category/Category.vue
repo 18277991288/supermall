@@ -1,13 +1,28 @@
 <template>
-  <h2>分类</h2>
+  <div id="category">
+    <category-nav></category-nav>
+  </div>
 </template>
 
 <script>
-  export default {
-    name: "Category"
-  }
+
+import CategoryNav from "./childComps/CategoryNav";
+
+
+
+export default {
+  name: "Category",
+  components: {
+    CategoryNav,
+
+  },
+};
 </script>
 
 <style scoped>
+#category {
+  height: 2000px;
+}
+
 
 </style>
